@@ -1,5 +1,6 @@
-def multipy(a,b):
-    if b == 1: 
+def multiply(a, b):
+    if b == 1:
         return a
-    else: 
+    
+    else:
         return a + multiply(a, b-1)
