@@ -1,31 +1,31 @@
 class Taxicab:
     
-
+    
     def __init__(self, x, y):
         
-        self.__x = x
-        self.__y = y
-        self.__odometer = 0
+        self._x_coord = x
+        self._y_coord = y
+        self._odometer = 0
     
     def get_x_coord(self):
         
-        return self.__x
+        return self._x_coord
     
     def get_y_coord(self):
         
-        return self.__y
+        return self._y_coord
     
     def get_odometer(self):
         
-        return self.__odometer
+        return self._odometer
     
-    def move_x(self, dx):
+    def move_x(self, distance):
         
-        self.__x += dx
-        self.__odometer += abs(dx)
+        self._x_coord += distance
+        self._odometer += abs(distance)
     
-    def move_y(self, dy):
-      
-        self.__y += dy
-        self.__odometer += abs(dy)
+    def move_y(self, distance):
+        
+        self._y_coord += distance
+        self._odometer += abs(distance)
 
